@@ -10,7 +10,7 @@ const HomeLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Footer = () => {
+const Footer = ({title}) => {
   const year = new Date().getFullYear();
   return (
     <>
@@ -47,7 +47,7 @@ const Footer = () => {
           padding: 1rem;
         `}
       >
-        Hotel Soritor. All rights reserved {year} &copy;
+        {title}. All rights reserved {year} &copy;
       </p>
     </>
   );
